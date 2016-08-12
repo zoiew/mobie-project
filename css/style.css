@@ -1,0 +1,106 @@
+/* CSS Document */
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
+a{text-decoration:none;color:#bbb8b3;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{font:12px "微软雅黑";}
+.header,.ad,.main,.footer{margin:0 auto;}
+
+/*-------------------------header---------------------------------------*/
+.box1{height:78px;}
+.header{width:1066px; height:63px;background:#fff;overflow:hidden;padding-top:15px;}
+.header h1{width:299px;height:63px;float:left;}
+.headerlist{width:430px; height:63px;float:left;margin-left:120px;}
+.headerlist li{float:left;height:46px;line-height:80px;font-size:16px;text-align:center;}
+#l1{width:58px;}
+#l2{width:58px;}
+#l3{width:84px;}
+#l4{width:70px;}
+.search{width:141px;height:24px;float:left;border:1px solid #ccb6a1;margin-top:10px;}
+.re a{padding:0 14px;float:left;font-size:14px;}
+.re span{float:left;width:2px;height:14px;color:#bbb8b3;}
+.search input{width:118px;height:14px;float:left;border:none;}
+.search p{width:23px;height:24px;float:left;background:url(../images/glass.jpg) no-repeat left center;}
+
+
+
+
+/*-------------------------banner---------------------------------------*/
+.banner img{display:block;width:100%;height:100%;}
+
+
+/*-------------------------ad---------------------------------------*/
+.box2{height:38px;margin-bottom:20px;}
+.ad{width:1066px; height:38px;background:url(../images/arrow.jpg) no-repeat bottom center;}
+.ad p{width:350px;height:38px;line-height:38px;font-size:14px;text-indent:38px;background:url(../images/mouth.jpg) no-repeat 20px center;padding-left:20px;}
+
+
+/*-------------------------main---------------------------------------*/
+.box3{height:1100px;background:#d6dae3;}
+.main{width:1066px; height:1045px;}
+.rank{width:227px; height:1009px;background:#fff;float:right;padding:18px 20px;}
+.bt4{width:742px;height:24px;line-height:24px;text-indent:32px;background:url(../images/top.jpg) no-repeat left center;margin-bottom:20px;}
+.bt4 a{width:35px;height:24px;float:right;text-indent:0;font-size:12px;}
+.rank h3{height:30px;line-height:30px;font-size:12px;}
+.rank img{display:block; margin-top:18px;}
+.t1{line-height:36px;font-size:18px;margin-top:18px;}
+.rank .t2{line-height:26px;font-size:14px;color:#6e6c6d;border-bottom:1px solid #e4e2e3;height:168px;}
+.bt5{width:220px;height:52px;line-height:52px;font-size:24px;text-indent:32px;margin-bottom:20px;background:url(../images/phone.jpg) no-repeat left center;}
+.t3,.t4{font-size:14px;line-height:26px;}
+
+
+
+
+.hot{width:742px; height:320px;float:left;padding:18px 20px;background:#f2f1ef;}
+.bt{width:742px;height:24px;line-height:24px;text-indent:32px;background:url(../images/video.jpg) no-repeat left center;margin-bottom:20px;}
+.bt a{width:35px;height:24px;float:right;text-indent:0;font-size:12px;}
+.speak1{width:226px;height:277px;background:#fff;line-height:24px;float:left;}
+.speak1 img{display:block;}
+.speak1 .lan{width:226px;height:10px;border-top:4px solid #1fbfef;}
+.speak1 .yellow{width:226px;height:10px;border-top:4px solid #f5a544;}
+.speak1 .green{width:226px;height:10px;border-top:4px solid #8bbe01;}
+.speak1 .p1 a{font-size:14px;color:#000;}
+.speak1 .p2{font-size:14px;}
+#mid{margin:0 32px 15px 32px;}
+
+.share{width:742px; height:173px;float:left;margin:14px 0;padding:18px 20px;background:#f2f1ef;margin:14px 0;}
+.bt2{width:742px;height:24px;line-height:24px;text-indent:32px;background:url(../images/book.jpg) no-repeat left center;margin-bottom:20px;}
+.bt2 a{width:35px;height:24px;float:right;text-indent:0;font-size:12px;}
+.blank{width:720px;height:108px;background:#fff;padding:20px 0 0 20px;}
+.L1{width:86px;height:86px;float:left;margin-right:18px;}
+.and{width:350px;height:86px;float:left;}
+.L2 a{color:#000;font-size:18px;}
+.L3{height:32px;line-height:32px;}
+.L4 a{color:#000;font-size:14px;}
+
+.act{width:742px; height:417px;background:pink;float:left;padding:18px 20px;background:#f2f1ef;}
+.bt3{width:742px;height:24px;line-height:24px;text-indent:32px;background:url(../images/smallstar.jpg) no-repeat left center;margin-bottom:20px;}
+.bt3 a{width:35px;height:24px;float:right;text-indent:0;font-size:12px;}
+.a1{width:710px;height:184px;border-bottom:2px solid #e4e3e1;}
+
+.content{width:462px;height:161px;float:right;}
+.content .p1 a{color:#000;font-size:18px;line-height:26px;}
+.content .p2{text-indent:18px;background:url(../images/colock.jpg) no-repeat left;color:#bbb8b3;margin-top:8px;}
+.content .p3{height:74px;line-height:26px;}
+.content .p3 a{height:74px;line-height:26px;color:#bbb8b3;}
+
+
+
+
+/*-------------------------footer---------------------------------------*/
+.box4{height:268px;background:#f6f6f6;}
+.footer{width:1066px;height:268px;padding:28px 0 0 20px;}
+.fbt{width:58px;height:30px;line-height:30px;color:#000;}
+.footlist{width:750px;height:100px;}
+.footlist li{float:left;padding:10px 25px;}
+.footlist li a{color:#3f3f3f;}
+
+.left{width:744px;height:240px;float:left;}
+.right{width:300px;height:240px;float:right;}
+.right li{font-size:14px; height:36px;line-height:36px;}
+.right li a{color:#3f3f3f;}
+.right .kfpt1{text-indent:28px;background:url(../images/smallwb.jpg) no-repeat left;}
+.right .kfpt2{text-indent:28px;background:url(../images/star.jpg) no-repeat left;}
+.footlist2{width:750px;height:300px;}
+.footlist2 li{float:left;padding:7px 15px;}
+.footlist2 li a{color:#3f3f3f;}
