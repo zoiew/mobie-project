@@ -1,0 +1,26 @@
+<html >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>ionic练习</title>
+		<script src="../ionic/js/ionic.bundle.js"></script>
+		<link rel="stylesheet" href="../ionic/css/ionic.css">
+    </head>
+    <body>
+		<h3>bar-positive</h3>
+		<div class="bar bar-header bar-positive">
+		<h1 class="title">bar-positive</h1>
+		</div>
+     <!--  下拉刷新 -->
+	    <ion-content >
+	        <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+	
+	    </ion-content>
+  </body>
+  <script>
+  	var app = angular.module('zoiew',['ionic'])
+  	app.controller('indexCtrl',function($scope){
+  		$http.get('')
+  	})
+  </script>
+</html>

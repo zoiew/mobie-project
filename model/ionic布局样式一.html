@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="zoiew">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title></title>
+		<script src="../ionic/js/ionic.bundle.js"></script>
+		<script src="../js/angular-ui-router.js"></script>
+		<link rel="stylesheet" href="../ionic/css/ionic.css">
+	</head>
+	<style>
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+	<body>
+		<!--header部分-->
+		<ion-header-bar align-title="center" no-tap-scroll="false" class="bar-positive">
+			<div class="buttons">
+				<button class="button" ng-click="doSomething()">Left Button</button>
+			</div>
+			<h1 class="title">笑话大全</h1>
+			<div class="buttons">
+				<button class="button">Right Button</button>
+			</div>
+		</ion-header-bar>
+		<!--中间内容部分-->
+
+		<ion-content>
+
+			<div class="bar bar-header">
+				<div class="h1 title">切换</div>
+			</div>
+
+			<div class="content has-header">
+
+				<ul class="list">
+					<li class="item item-toggle">
+						HTML5
+						<label class="toggle toggle-positive">
+             <input type="checkbox" checked="">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+					</li>
+					<li class="item item-toggle">
+						CSS3
+						<label class="toggle toggle-calm">
+             <input type="checkbox" checked="">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+					</li>
+					<li class="item item-toggle">
+						Flashplayer
+						<label class="toggle toggle-balanced">
+             <input type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+					</li>
+					<li class="item item-toggle">
+						Java Applets
+						<label class="toggle toggle-energized">
+             <input type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+					</li>
+					<li class="item item-toggle">
+						JavaScript
+						<label class="toggle toggle-assertive">
+             <input type="checkbox" checked="">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+					</li>
+					<li class="item item-toggle">
+						Silverlight
+						<label class="toggle toggle-royal">
+             <input type="checkbox">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+					</li>
+					<li class="item item-toggle">
+						Web Components
+						<label class="toggle toggle-dark">
+             <input type="checkbox" checked="">
+             <div class="track">
+               <div class="handle"></div>
+             </div>
+           </label>
+					</li>
+				</ul>
+
+			</div>
+		</ion-content>
+		<!--footer部分-->
+		<ion-footer-bar align-title="center" class="bar-assertive">
+			<div class="buttons">
+				<button class="button">Left Button</button>
+			</div>
+			<h1 class="title">Title!</h1>
+			<div class="buttons" ng-click="doSomething()">
+				<button class="button">Right Button</button>
+			</div>
+		</ion-footer-bar>
+
+	</body>
+	<script>
+		var app = angular.module('zoiew', ['ionic']);
+		app.controller('$indexCtrl', function() {
+
+		})
+	</script>
+
+</html>

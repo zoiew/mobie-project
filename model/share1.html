@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IT逻辑面试题</title>
+</head>
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	ul,li{
+		list-style: none;
+	}
+	html,
+	body{
+		width:100%;
+	}
+	/*字体设置*/
+		
+	@font-face {
+	font-family: myFirstFont;
+	src: url('../font/叶根友毛笔行书2.0.ttf');
+	}
+		
+	header{
+		width:100%;
+		height:100px;
+		background:#696;
+		font-size:32px;
+		font-weight:bold;
+		text-align:center;
+		line-height:100px;
+		font-family: myFirstFont;
+	}
+	div{
+		width:90%;
+		background:#ccc;
+		margin:auto;
+		padding:10px;
+		overflow:hidden;
+	}
+	.text1{
+
+		width:100%;
+		text-indent: 5px;
+		padding:5px;
+		background:skyblue;
+
+	}
+	.text1 button{
+		width:60px;
+		height:30px;
+		margin:5px 0 ;
+	}
+	.question{
+
+		width:100%;
+		height:60px;
+	}
+	.anwser{
+		padding:10px 0;
+		width:100%;
+		background:orange;
+		display:none;
+		font-size:14px;
+		line-height:26px;
+		text-indent:5px;
+	}
+	.anwser span{
+		color:green;
+	}
+	.red{
+		color:red;
+	}
+
+
+</style>
+<script src="../js/jquery-1.12.0.js"></script>
+<script>
+	$(function(){
+		//alert(1);
+		var oText = $('.text1')
+		var oBtn = $('button');
+		var oAnwser = $('.anwser');
+		var index;
+		console.log(oBtn);
+		oText.find('button').click(function(){
+			console.log($(this));
+			
+			$(this).addClass('red');
+			console.log($(this).prev());
+			$(this).prev().show();
+		})
+	})
+
+</script>
+<body>
+	<div>
+		<header>程序员面试逻辑题</header>
+		<ul class="text1">
+			<li class="question">1.假设有一个池堂，里面有无穷无尽的水。现有2个空水壶，容积分别为5升和6升。问题是如何用这两个水壶从池塘取得3升水？
+			</li>
+			<li class="anwser">答案：由5升向空5倒，剩下1升，把这一升倒5里，然后6装满，倒5里面，由于5升里面有1升，因此6只能向5里倒3升，剩余3升。
+			</li>
+			<button>显示答案</button>
+		</ul>
+		<ul class="text1">
+			<li class="question">2.探险者先往南走一公里,再往西走一公里,再往北走一公里,回到原点,问碰到什么野生动物
+			</li>
+			<li class="anwser">答案：北极熊。（当你站在地球最北端,往南走一公里再往东走一公里再往北走一公里就会回到原点.往南就是沿着经线向前走,往东就是沿着纬线向前走,向北又是沿着经线向前走.两次走经线距离相等.沿纬线的距离可以忽略掉.（前题是不考虑其他的影响））
+			</li>
+			<button>显示答案</button>
+		</ul>
+		<ul class="text1">
+			<li class="question">3.一个人花8块钱买了一只鸡，9块钱卖掉了，然后他觉得不划算，花10块钱又买回来了，11块卖给另外一个人。问他赚了多少? ？
+			</li>
+				<li class="anwser">答案：按数学的是赚2块（即9－8＋9－10＋11－9＝2元。），按经济学是赚一块，但是原本能赚3块现在却只赚了1块，实际是亏了2块。<br><br>
+					<span>
+
+						详细分析:<br>
+						第一次买卖，主人公损失8块，获得一只鸡，第二次买卖；主人公获得9块，损失一只鸡；第三次买卖，主人公损失10块，获得一只鸡；第四买卖，主人公获得11块，损失一只鸡 <br>
+						所以 整个产生的GDP（国内生产总值）是8＋9＋10＋11＝38元＋4只鸡 <br>
+						4、整个事件有3次交易，我门来看看具体是哪3次？<br> 
+						第一次交易：8元买进，9元卖出，利润1元； <br>
+						第二次交易：9元卖出，10元买进，利润-1元； <br>
+						第三次交易：10元买进，11元卖出利润1元； <br>
+						整个过程：1-1+1=1元 <br>
+						所以分析得知：这个人是个傻子，因为后两次交易等于白干了。 <br>
+						经测试，企业认为： <br>
+						回答利润是2元的肯定是面试失败者；<br>
+						回答3元的更为愚蠢，因为自己什么是追加成本都不知道，肯定也是失败；<br>
+						回答1元者，恭喜你，不属于傻子范围<br>
+						结果是：本来可以直接赚3元的，经过他3次交易后总利润变成1元了。<br>
+						所以正确答案是：-2元！<br>
+						回答-2元者，面试成功！！！<br>
+					</span>
+			</li>
+			<button>显示答案</button>
+		</ul>
+	</div>
+	
+</body>
+</html>

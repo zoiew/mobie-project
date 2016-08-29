@@ -1,0 +1,41 @@
+<html ng-app="zoiew">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>ionic练习</title>
+		<script src="../ionic/js/ionic.bundle.js"></script>
+		<link rel="stylesheet" href="../ionic/css/ionic.css">
+    </head>
+    <body>
+  
+          
+
+
+
+    	<ion-header-bar align-title="left" class="bar-positive">
+			 <h3>bar-positive</h3>
+		    <div class="bar bar-header bar-positive">
+		    	<h1 class="title">bar-positive</h1>
+		    </div>
+		    <div class="content has-header padding">
+		      <p><button class="button button-light">button-light</button>
+		    </div>
+		</ion-header-bar>
+		<ion-content>
+		</ion-content>
+     <!--  下拉刷新 -->
+      <ion-content >
+        <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+        <ion-list>
+            <ion-item ng-repeat="item in items" ng-bind="item.name"></ion-item>
+        </ion-list>
+    </ion-content>
+
+
+    
+  </body>
+  <script>
+  	var app = angular.module('zoiew',['ionic'])
+
+  </script>
+</html>

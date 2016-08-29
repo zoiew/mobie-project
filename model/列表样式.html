@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html ng-app="zoiew">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title></title>
+		<script src="../ionic/js/ionic.bundle.js"></script>
+		<script src="../js/angular-ui-router.js"></script>
+		<link rel="stylesheet" href="../ionic/css/ionic.css">
+	</head>
+	<style>
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+	<body>
+		<!--header部分-->
+		<ion-header-bar align-title="center" no-tap-scroll="false" class="bar-positive">
+			<div class="buttons">
+				<button class="button" ng-click="doSomething()">Left Button</button>
+			</div>
+			<h1 class="title">笑话大全</h1>
+			<div class="buttons">
+				<button class="button">Right Button</button>
+			</div>
+		</ion-header-bar>
+		<!--中间内容部分-->
+
+		<ion-content>
+			<div class="bar bar-header">
+				<div class="h1 title">图标列表</div>
+			</div>
+
+			<div class="content has-header ionic-pseudo">
+
+				<div class="list">
+
+					<a class="item item-icon-left" href="#">
+						<i class="icon ion-email"></i> Check mail
+					</a>
+
+					<a class="item item-icon-left item-icon-right" href="#">
+						<i class="icon ion-chatbubble-working"></i> Call Ma
+						<i class="icon ion-ios-telephone-outline"></i>
+					</a>
+
+					<a class="item item-icon-left" href="#">
+						<i class="icon ion-mic-a"></i> Record album
+						<span class="item-note">
+            Grammy
+          </span>
+					</a>
+
+					<a class="item item-icon-left" href="#">
+						<i class="icon ion-person-stalker"></i> Friends
+						<span class="badge badge-assertive">0</span>
+					</a>
+
+					<div class="item item-divider">
+						Activities
+					</div>
+
+					<a class="item item-icon-left" href="#">
+						<i class="icon ion-beaker"></i> Breaking Bad
+						<span class="item-note">
+            Blue, yellow, pink
+          </span>
+					</a>
+
+					<a class="item item-icon-left" href="#">
+						<i class="icon ion-music-note"></i> Music
+						<span class="item-note">
+            JT
+          </span>
+					</a>
+
+					<a class="item item-icon-left" href="#">
+						<i class="icon ion-ios-game-controller-b"></i> Games
+						<span class="item-note">
+            Super Mario
+          </span>
+					</a>
+
+					<a class="item item-icon-left item-icon-right" href="#">
+						<i class="icon ion-bag"></i> Shopping
+						<i class="icon ion-arrow-right-c"></i>
+					</a>
+
+				</div>
+
+			</div>
+
+			<!--带头像的列表-->
+			<div class="bar bar-header">
+				<div class="h1 title">带头像选项列表</div>
+			</div>
+
+			<div class="content has-header ionic-pseudo">
+
+				<div class="list">
+
+					<a class="item item-avatar" href="#">
+						<img src="http://www.runoob.com/try/demo_source/venkman.jpg">
+						<h2>Venkman</h2>
+						<p>Back off, man. I'm a scientist.</p>
+					</a>
+
+					<a class="item item-avatar" href="#">
+						<img src="http://www.runoob.com/try/demo_source/spengler.jpg">
+						<h2>Egon</h2>
+						<p>We're gonna go full stream.</p>
+					</a>
+
+					<a class="item item-avatar" href="#">
+						<img src="http://www.runoob.com/try/demo_source/stantz.jpg">
+						<h2>Ray</h2>
+						<p>Ugly little spud, isn't he?</p>
+					</a>
+
+					<a class="item item-avatar" href="#">
+						<img src="http://www.runoob.com/try/demo_source/winston.jpg">
+						<h2>Winston</h2>
+						<p>That's a big Twinkie.</p>
+					</a>
+
+					<a class="item item-avatar" href="#">
+						<img src="http://www.runoob.com/try/demo_source/tully.jpg">
+						<h2>Tully</h2>
+						<p>Okay, who brought the dog?</p>
+					</a>
+
+					<a class="item item-avatar" href="#">
+						<img src="http://www.runoob.com/try/demo_source/barrett.jpg">
+						<h2>Dana</h2>
+						<p>I am The Gatekeeper!</p>
+					</a>
+
+					<a class="item item-avatar" href="#">
+						<img src="http://www.runoob.com/try/demo_source/slimer.jpg">
+						<h2>Slimer</h2>
+						<p>Boo!</p>
+					</a>
+
+				</div>
+
+				<!--缩略图列表-->
+				<!--<div class="bar bar-header">
+					<div class="h1 title">缩略图列表</div>
+				</div>-->
+
+				<div class="content has-header ionic-pseudo">
+
+					<div class="list">
+
+						<a class="item item-thumbnail-left" href="#">
+							<img src="http://www.runoob.com/try/demo_source/blue-album.jpg">
+							<h2>Weezer</h2>
+							<p>Blue Album</p>
+						</a>
+
+						<a class="item item-thumbnail-left" href="#">
+							<img src="http://www.runoob.com/try/demo_source/siamese-dream.jpg">
+							<h2>Smashing Pumpkins</h2>
+							<p>Siamese Dream</p>
+						</a>
+
+						<a class="item item-thumbnail-left" href="#">
+							<img src="http://www.runoob.com/try/demo_source/nevermind.jpg">
+							<h2>Nirvana</h2>
+							<p>Nevermind</p>
+						</a>
+
+						<a class="item item-thumbnail-left" href="#">
+							<img src="http://www.runoob.com/try/demo_source/license-to-ill.jpg">
+							<h2>Beastie Boys</h2>
+							<p>License To Ill</p>
+						</a>
+
+						<a class="item item-thumbnail-left" href="#">
+							<img src="http://www.runoob.com/try/demo_source/dookie.jpg">
+							<h2>Green Day</h2>
+							<p>Dookie</p>
+						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!--内嵌式列表-->
+
+			<div class="content has-header ionic-pseudo">
+				<div class="bar bar-header">
+					<div class="h1 title">插入列表</div>
+				</div>
+
+				<div class="list list-inset">
+
+					<div class="item">
+						Raiders of the Lost Ark
+					</div>
+
+					<div class="item">
+						Temple of Doom
+					</div>
+
+					<div class="item">
+						Last Crusade
+					</div>
+
+					<div class="item">
+						Kingdom of the Crystal Skull
+					</div>
+
+				</div>
+
+			</div>
+
+		</ion-content>
+		<!--footer部分-->
+		<ion-footer-bar align-title="center" class="bar-assertive">
+			<div class="buttons">
+				<button class="button">Left Button</button>
+			</div>
+			<h1 class="title">Title!</h1>
+			<div class="buttons" ng-click="doSomething()">
+				<button class="button">Right Button</button>
+			</div>
+		</ion-footer-bar>
+
+	</body>
+	<script>
+		var app = angular.module('zoiew', ['ionic']);
+		app.controller('$indexCtrl', function() {
+
+		})
+	</script>
+
+</html>
